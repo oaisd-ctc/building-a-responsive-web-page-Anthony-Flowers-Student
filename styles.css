@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: rgb(245, 191, 120);
+}
+
+nav {
+    width: 100vw;
+    height: 80px;
+    background: rgb(158, 116, 60);
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+main {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.projectcontainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 2px solid rgb(158, 116, 60);
+    width: 80vw;
+    height: 70vh;
+    margin: 0 auto;
+    border-radius: 15px;
+    scrollbar-color: rgb(158, 116, 60) rgb(227, 178, 113);
+
+}
+
+.projectcontainer>div {
+    background-color: rgb(158, 116, 60);
+    width: 90%;
+    height: 100px;
+    border-radius: 15px;
+    transition: 0.8s;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.projectcontainer>div:hover {
+    background-color: rgb(209, 156, 86);
+}
+
+.upcomingprojectscontainer {
+    background: rgb(158, 116, 60);
+    width: 60vw;
+    height: 230px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.upcomingprojectscontainer>h2 {
+    padding-top: 10px;
+}
+
+.upcomingprojectscontainer>h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.upcomingprojectscontainer>p {
+    margin-top: 5px;
+}
+
+aside {
+    opacity: 0;
+}
+
+@media screen and (max-width:500px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: 200px;
+    }
+
+    nav>h2 {
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .upcomingprojectscontainer {
+        height: 450px;
+        width: 60vw;
+        align-content: center;
+        background: rgb(199, 124, 24);
+        transition: 1s;
+    }
+
+    .projectcontainer>div {
+        background: rgb(199, 124, 24);
+        transition: 1s;
+    }
+
+    nav {
+        background: rgb(199, 124, 24);
+
+    }
+
+    body {
+        background: rgb(252, 174, 96);
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:800px) {
+    .upcomingprojectscontainer {
+        height: 25vh;
+        width: 60vw;
+        align-content: center;
+    }
+
+    .projectcontainer>div {
+        background: rgb(252, 174, 96);
+    }
+
+    * {
+        color: white;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1300px) {
+    .projectcontainer>div {
+        background: red;
+    }
+
+    * {
+        border: 1px solid pink;
+    }
+
+    aside {
+        opacity: 100%;
+        color: pink;
+    }
+
+    .upcomingprojectscontainer {
+        background: blue;
+        color: green;
+        height: 30vh;
+        align-content: center;
+    }
+
+    body {
+        background: white;
+    }
+
+    nav {
+        background: yellow;
+    }
+}
